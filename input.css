@@ -4,93 +4,105 @@
 
 #menu-1 {
 
-    .hamburger-top,
-    .hamburger-middle,
-    .hamburger-bottom {
-        @apply absolute w-6 h-0.5 top-0 left-0 bg-white duration-1000
+    /* 
+        line is using as 'top line'
+        line::before is using as 'middle line'
+        line::after is using as 'bottom line'
+    */
+
+    .line,
+    .line::before,
+    .line::after {
+        @apply absolute w-6 h-0.5 top-0 left-0 bg-white duration-1000 content-[''];
     }
 
-    .hamburger-top {
-        @apply -top-2
-    }
-
-    .hamburger-bottom {
+    .line::before {
         @apply top-2
     }
 
+    .line::after {
+        @apply top-4
+    }
+
     .open {
-        .hamburger-middle {
-            opacity: 0;
+        .line::before {
+            @apply opacity-0
         }
 
-        .hamburger-top {
+        .line {
             @apply rotate-45 translate-x-0 translate-y-2
         }
 
-        .hamburger-bottom {
-            @apply -rotate-45 -translate-x-0 -translate-y-2
+        .line::after {
+            @apply -rotate-90 -translate-x-0 -translate-y-4
         }
     }
 }
 
 #menu-2 {
 
-    .hamburger-top,
-    .hamburger-middle,
-    .hamburger-bottom {
-        @apply absolute w-6 h-0.5 top-0 left-0 bg-white duration-1000
+    /* 
+        line is using as 'top line'
+        line::before is using as 'middle line'
+        line::after is using as 'bottom line'
+    */
+
+    .line,
+    .line::before,
+    .line::after {
+        @apply absolute w-6 h-0.5 top-0 left-0 bg-white duration-1000 content-['']
     }
 
-    .hamburger-top {
-        @apply -top-2
-    }
-
-    .hamburger-bottom {
+    .line::before {
         @apply top-2
     }
 
+    .line::after {
+        @apply top-4
+    }
+
     .open {
-        .hamburger-top {
+        .line {
             @apply rotate-[225deg] translate-x-0 translate-y-2
         }
 
-        .hamburger-middle {
-            opacity: 0;
+        .line::before {
+            @apply opacity-0
         }
 
-        .hamburger-bottom {
-            @apply -rotate-[225deg] -translate-x-0 -translate-y-2
+        .line::after {
+            @apply -rotate-[90deg] -translate-x-0 -translate-y-4
         }
     }
 }
 
 #menu-3 {
 
-    .hamburger-top,
-    .hamburger-middle,
-    .hamburger-bottom {
+    .line-top,
+    .line-middle,
+    .line-bottom {
         @apply absolute w-6 h-0.5 top-0 left-0 bg-white duration-1000
     }
 
-    .hamburger-top {
+    .line-top {
         @apply -top-2
     }
 
-    .hamburger-bottom {
+    .line-bottom {
         @apply top-2
     }
 
     .open {
-        
-        .hamburger-top {
-            opacity: 0;
+
+        .line-top {
+            @apply opacity-0
         }
 
-        .hamburger-middle {
+        .line-middle {
             @apply rotate-[765deg] translate-x-0 translate-y-0
         }
 
-        .hamburger-bottom {
+        .line-bottom {
             @apply -rotate-45 -translate-x-0 -translate-y-2
         }
     }
@@ -98,40 +110,39 @@
 
 #menu-4 {
 
-    .hamburger-top,
-    .hamburger-middle,
-    .hamburger-bottom {
-        @apply absolute w-6 h-0.5 top-0 left-0 bg-white duration-1000
-    }
+    /* 
+        line is using as 'top line'
+        line::after is using as 'bottom line'
 
-    .hamburger-middle::after {
+        line-middle and line-middle::after are using as 'middle line'
+    */
+
+    .line,
+    .line::after,
+    .line-middle,
+    .line-middle::after {
         @apply absolute w-6 h-0.5 top-0 left-0 bg-white duration-1000 content-['']
     }
 
-
-    .hamburger-top {
+    .line {
         @apply -top-2
     }
 
-    .hamburger-bottom {
-        @apply top-2
+    .line::after {
+        @apply top-4
     }
 
     .open {
-        .hamburger-top {
+        .line {
             @apply opacity-0
         }
 
-        .hamburger-middle {
+        .line-middle {
             @apply rotate-45 translate-x-0 translate-y-0
         }
 
-        .hamburger-middle::after {
+        .line-middle::after {
             @apply -rotate-90 translate-x-0 translate-y-0
-        }
-
-        .hamburger-bottom {
-            @apply opacity-0
         }
     }
 }
