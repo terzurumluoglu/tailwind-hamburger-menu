@@ -1,0 +1,28 @@
+{
+  "name": "tailwind-hamburger-menu",
+  "version": "1.0.0",
+  "description": "hamburger menu using by tailwind",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./input.css -o ./assets/css/style.css",
+    "build-w": "npx tailwindcss -i ./input.css -o ./assets/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/terzurumluoglu/tailwind-hamburger-menu.git"
+  },
+  "keywords": [
+    "tailwindcss",
+    "hamburger",
+    "menu"
+  ],
+  "author": "Toprak ERZURUMLUOĞLU <toprakerzurumluoglu@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/terzurumluoglu/tailwind-hamburger-menu/issues"
+  },
+  "homepage": "https://github.com/terzurumluoglu/tailwind-hamburger-menu#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/script.js" defer></script>
+    <title>Hamburger Menu | TailwindCSS</title>
+</head>
+
+<body class="text-white bg-gray-800">
+
+    <!-- Container -->
+    <div class="container min-h-screen flex flex-col justify-around items-center">
+
+        <!-- Title -->
+        <h1 class="text-4xl mb-4">
+            Hamburger Menu | TailwindCSS
+        </h1>
+
+        <!-- Menu Section -->
+        <section class="flex flex-col justify items-center gap-8">
+
+            <!-- Menu-1 -->
+            <div id="menu-1">
+                <button onclick="toggle()" type="button" class="block hamburger w-6 h-6 relative">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <!-- Menu-2 -->
+            <div id="menu-2">
+                <button onclick="toggle()" type="button" class="block hamburger w-6 h-6 relative">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <!-- Menu-3 -->
+            <div id="menu-3">
+                <button onclick="toggle()" type="button" class="block hamburger w-6 h-6 relative">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <!-- Menu-4 -->
+            <div id="menu-4">
+                <button onclick="toggle()" type="button" class="block hamburger w-6 h-6 relative">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+        </section>
+    </div>
+
+</body>
+
+</html>
